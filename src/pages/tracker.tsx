@@ -143,6 +143,7 @@ export default function Tracker(): React.ReactNode {
                 type="number"
                 name="timer"
                 placeholder="Tempo de respawn"
+                title="Deve ser salvo no format 0000. ex: 1h de respawn -> 0100"
               />
             </label>
             <label>
@@ -182,6 +183,7 @@ export default function Tracker(): React.ReactNode {
         </button>
 
         <button
+          title="Persiste a lista atual (com as horas das mortes)"
           style={{ color: "white", backgroundColor: "green" }}
           onClick={() => {
             manager.save(list);
